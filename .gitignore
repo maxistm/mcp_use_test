@@ -1,0 +1,27 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Configuration and secrets
+config.json
+.env
+
+# Logs
+*.log
+bot.log
+
+# Old/backup files
+*.bak
+*_old.py
+*.pyc.bak
+.github/
+config.json
+
+

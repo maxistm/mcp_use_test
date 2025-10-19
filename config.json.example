@@ -1,0 +1,20 @@
+{
+  "telegram": {
+    "token": "YOUR_TELEGRAM_BOT_TOKEN"
+  },
+  "openai": {
+    "api_key": "YOUR_OPENAI_API_KEY",
+    "model": "gpt-4"
+  },
+  "mcpServers": {
+    "fetch": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "mcp/fetch"
+      ]
+    }
+  }
+}
