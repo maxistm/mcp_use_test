@@ -1,20 +1,26 @@
 {
   "telegram": {
-    "token": "YOUR_TELEGRAM_BOT_TOKEN"
+    "token": "YOUR_TELEGRAM_BOT_TOKEN_HERE",
+    "polling_timeout": 30,
+    "polling_interval": 2
   },
   "openai": {
-    "api_key": "YOUR_OPENAI_API_KEY",
-    "model": "gpt-4"
+    "api_key": "YOUR_API_KEY_HERE",
+    "model": "deepseek-chat",
+    "base_url": "https://api.deepseek.com"
+  },
+  "mcp": {
+    "timeout": 30,
+    "max_content_length": 8000
   },
   "mcpServers": {
     "fetch": {
       "command": "docker",
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "mcp/fetch"
-      ]
+      "args": ["run", "-i", "--rm", "mcp/fetch"]
     }
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
   }
 }
